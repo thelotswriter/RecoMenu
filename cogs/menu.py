@@ -1,14 +1,7 @@
 import discord
 from discord.ext import commands
-import os
-import sys
 
-
-path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-path = os.path.join(path, 'functions')
-sys.path.insert(0, path)
-
-from menu_func import generate_menu
+from recomenu_functions import generate_menu
 
 
 class Menu(commands.Cog):

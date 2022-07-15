@@ -1,15 +1,7 @@
 import discord
 from discord.ext import commands
-import os
-import sys
 
-
-path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-path = os.path.join(path, 'functions')
-sys.path.insert(0, path)
-
-from modify_func import modify_recipe
-
+from recomenu_functions import modify_recipe
 
 class Modify(commands.Cog):
 
